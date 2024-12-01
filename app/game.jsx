@@ -23,7 +23,6 @@ const Game = ({ data, setPlay }) => {
   };
 
   useEffect(() => {
-    console.log(data);
     const count = setInterval(() => {
       setRegressive((prev) => {
         if (prev <= 1) {

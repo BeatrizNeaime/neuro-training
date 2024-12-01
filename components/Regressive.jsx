@@ -7,11 +7,13 @@ const Regressive = ({ value }) => {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        height: "100%",
+        width: "100%",
       }}
     >
       <Text
         style={{
-          fontSize: 40,
+          fontSize: 120,
           fontWeight: "bold",
         }}
       >

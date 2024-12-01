@@ -34,7 +34,6 @@ export default function Index() {
       newSequence.push(randomColor);
     }
 
-    // Adiciona lateralidade
     newSequence.forEach((el) => {
       if (el.color === null) {
         el.side = Math.random() < 0.5 ? "arrowleft" : "arrowright";
@@ -72,7 +71,7 @@ export default function Index() {
     generateSequence();
   };
 
-  if (play) {
+  if (play && current !== null) {
     return <Game data={current} setPlay={setPlay} />;
   }
 
@@ -164,7 +163,7 @@ export default function Index() {
                 onValueChange={(value) => {
                   const newColors = [...colors];
                   newColors[index].active = value;
-                  setColors({ ...colors, colors: newColors });
+                  setColors(newColors);
                 }}
               />
               <Text
