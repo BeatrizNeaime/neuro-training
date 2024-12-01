@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# Neuro Training App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a React Native application designed to assist physiotherapists during their sessions by providing an interactive and engaging experience. The app offers customizable gameplay to create moments of relaxation and fun for patients.
 
-## Get started
+## Purpose
 
-1. Install dependencies
+The **Neuro Training App** aims to support physiotherapists by introducing an enjoyable activity that combines visual and cognitive stimuli, helping patients stay engaged and motivated during their therapy sessions.
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Customizable Gameplay:
 
-   ```bash
-    npx expo start
-   ```
+  - Select active colors for the game.
+  - Set the duration for each phase.
+  - Define rest periods between phases.
+  - Choose the number of phases to play.
 
-In the output, you'll find options to open the app in a
+- Dynamic Game Logic:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+  - Alternates between displaying selected colors or directional arrows and a white screen for rest periods.
+  - Ensures randomness in color sequences without repeating the same color consecutively.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Interactive Design:
 
-## Get a fresh project
+  - Countdown timer to prepare players before the game starts.
+  - Real-time display of color-based cues or directional arrows.
 
-When you're ready, run:
+- User-Friendly Interface:
+
+  - Simple controls for customization.
+  - Clear and engaging visual design.
+
+## How it works
+
+1. Setup
+
+   - Physiotherapists configure the game parameters (colors, time, phases, etc.).
+
+2. Gameplay:
+   - The game begins with a countdown timer.
+     Patients respond to color cues and directional arrows.
+
+## Technologies Used
+
+- React Native: For cross-platform development.
+- Expo: Simplifies development and deployment.
+
+## Installation
+
+1. Clone this repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/BeatrizNeaime/neuro-training.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Navigate to the project directory:
 
-## Learn more
+```bash
+cd <project-directory>
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Install dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm install
+```
 
-## Join the community
+4. Run the app:
 
-Join our community of developers creating universal apps.
+```bash
+npm run start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Future Enhancements
+
+- Add progress tracking for physiotherapy sessions.
+- Include a database for patient performance records.
+- Provide multilingual support for a broader audience.
